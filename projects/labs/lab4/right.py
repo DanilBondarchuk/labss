@@ -105,7 +105,7 @@ def bounce(action):
 root = Tk()
 root.title("Right")
 
-c = Canvas(root, width=WIDTH, height=HEIGHT, background="#000")
+c = Canvas(root, width=WIDTH, height=HEIGHT, background="#00bf10")
 c.pack()
 
 BALL = c.create_oval(WIDTH / 2 - BALL_RADIUS / 2,
@@ -113,10 +113,10 @@ BALL = c.create_oval(WIDTH / 2 - BALL_RADIUS / 2,
                      WIDTH / 2 + BALL_RADIUS / 2,
                      HEIGHT / 2 + BALL_RADIUS / 2, fill="white")
 
-LEFT_PAD = c.create_line(LEFT_PAD_W / 2, 0, LEFT_PAD_W / 2, LEFT_PAD_H, width=LEFT_PAD_W, fill="yellow")
+LEFT_PAD = c.create_line(LEFT_PAD_W / 2, 0, LEFT_PAD_W / 2, LEFT_PAD_H, width=LEFT_PAD_W, fill="white")
 
 RIGHT_PAD = c.create_line(WIDTH - PAD_W / 2, 0, WIDTH - PAD_W / 2,
-                          PAD_H, width=PAD_W, fill="yellow")
+                          PAD_H, width=PAD_W, fill="white")
 
 BALL_X_CHANGE = 20
 
